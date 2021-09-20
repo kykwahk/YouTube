@@ -57,7 +57,7 @@ for (i in seq_along(btn.viewmore)) {
     str_trim()
   playlist.data[[i]] <- tibble(playlist=playlist, video=video)
   remDr$goBack()
-  Sys.sleep(1)
+  Sys.sleep(3)
   btn.viewmore <- remDr$findElements(using="xpath", 
                                      value="//yt-formatted-string[@id='view-more']/a")
 }
